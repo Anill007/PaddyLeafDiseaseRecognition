@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>main</title>
+
+    <style>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .img2 {
+        height: 50%;
+        width: 40%;
+        float: right;
+        margin-left: 16px;
+      }
+
+      p{
+        text-align: justify;
+      }
+
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">LOGO or NAME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/main/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/disease/">DISEASE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/classifier/">CLASSIFIER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class='container p-4 mt-4' style="box-shadow:  5px 5px 15px black;">
+      <h1 style="text-align: center;">PADDY LEAF DISEASE CLASSIFICATION USING CNN</h1>
+    <hr>
+      <div class="clearfix">
+        <img class="img2" src="{{ url_for('static', filename='image/paddymain.jpg')}}">
+        <p>Paddy is rice that still has its hull surrounding the inner edible kernel. While most rice is prepared for
+        consumption or further processing after the hull has been removed, a few rice products use paddy as the starting
+        material and then remove the hull during processing.
+        <br>
+        <br>
+        The rice is the meal crop and required for the purpose of preparation of various dishes.
+        The rice is the main source of carbohydrates in the diet.
+        The paddy is grown floodplains and coastal regions as it requires appreciable amount of water.
+        <br>
+        <br>
+        Plant disease affect the growth and crop yield of the plants and make social, ecological and economic impacts on
+        agriculture. Plant leaf diseases also cause
+        significant economic losses of farmers. Early detection of the diseases deserve special attention.
+        <br>
+        <br>
+        </p>
+        <h3>About Project</h3>
+        <p>
+        This is a web based application that detects the disease of the paddy leaf and gives the information
+        about the leaf to the user. For this, we are relying on Convolution Neural Network (CNN) to
+        classify healthy and diseased paddy leaves.
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>

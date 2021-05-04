@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <title>DISEASE</title>
+
+  <style>
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .img2 {
+      float: right;
+      height: 300px;
+      width: 300px;
+      margin: 8px;
+    }
+
+    #d-box {
+      padding: 10px;
+      box-shadow: 5px 5px 15px black;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">LOGO or NAME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/main/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/disease/">DISEASE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/classifier/">CLASSIFIER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class='container'>
+      <h1 class="m-4" style="text-align: center;">COMMON PADDY LEAF DISEASES</h1>
+      <div id="d-box">
+        <h2 style="text-align: center;">BLAST</h2>
+        <hr>
+        <div class="clearfix">
+          <img class="img2" src="{{ url_for('static', filename='image/blast.jpg')}}">
+          <h3>Cause</h3>
+          <p>Blast is caused by the fungus Magnaporthe oryzae. It can affect all above ground parts of a rice plant:
+            leaf, collar, node, neck, parts of panicle, and sometimes leaf sheath.</p>
+          <h3>Symptoms</h3>
+          <ul>
+            <li>
+              <p>Initial symptoms appear as white to gray-green lesions or spots, with dark green borders.</p>
+            </li>
+            <li>
+              <p>
+                Older lesions on the leaves are elliptical or spindle-shaped and whitish to gray centers with red to
+                brownish or necrotic border.</p>
+            </li>
+          </ul>
+
+          <h3>Management</h3>
+          <ul>
+            <li>
+              <p>Adjust planting time. Sow seeds early, when possible, after the onset of the rainy season.</p>
+            </li>
+            <li>
+              <p>Split nitrogen fertilizer application in two or more treatments. Excessive use of fertilizer can
+                increase
+                blast intensity.</p>
+            </li>
+            <li>
+              <p>
+
+                Flood the field as often as possible.</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <br>
+
+      <div id="d-box">
+        <h2 style="text-align: center;">BLIGHT</h2>
+        <hr>
+        <div class="clearfix">
+          <img class="img2" src="{{ url_for('static', filename='image/blight.jpg')}}">
+          <h3>Cause</h3>
+          <p>Bacterial blight is caused by Xanthomonas oryzae pv. oryzae.
+            It causes wilting of seedlings and yellowing and drying of leaves.</p>
+          <h3>Symptoms</h3>
+          <ul>
+            <li>
+              <p>On older plants, lesions usually develop as water-soaked to yellow-orange stripes on leaf blades or
+                leaf
+                tips or on
+                mechanically injured parts of leaves. Lesions have a wavy margin and progress toward the leaf base.</p>
+            </li>
+            <li>
+              <p>
+                On young lesions, bacterial ooze resembling a milky dew drop can be observed early in the morning. The
+                bacterial ooze
+                later on dries up and becomes small yellowish beads underneath the leaf.</p>
+            </li>
+          </ul>
+
+          <h3>Management</h3>
+          <ul>
+            <li>
+              <p>Use balanced amounts of plant nutrients, especially nitrogen.
+                Ensure good drainage of fields.</p>
+            </li>
+            <li>
+              <p>
+                Keep fields clean. Remove weed hosts and plow under rice stubble, straw, rice ratoons and volunteer
+                seedlings, which can
+                serve as hosts of bacteria.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div id="d-box">
+        <h2 style="text-align: center;">BROWNSPOT</h2>
+        <hr>
+        <div class="clearfix">
+          <img class="img2" src="{{ url_for('static', filename='image/brownspot.jpg')}}">
+          <h3>Cause</h3>
+          <p>Brown spot is a fungal disease that infects the coleoptile, leaves, leaf sheath, panicle branches, glumes,
+            and
+            spikelets.</p>
+          <h3>Symptoms</h3>
+          <ul>
+            <li>
+              <p>Starting at tillering stage, lesions can be observed on the leaves. They are initially small, circular,
+                and
+                dark brown
+                to purple-brown.</p>
+            </li>
+            <li>
+              <p>Fully developed lesions are circular to oval with a light brown to gray center, surrounded by a reddish
+                brown margin
+                caused by the toxin produced by the fungi.</p>
+            </li>
+          </ul>
+          <h3>Management</h3>
+          <ul>
+            <li>
+              <p>Monitor soil nutrients regularly.</p>
+            </li>
+            <li>
+              <p>Apply required fertilizers.</p>
+            </li>
+            <li>
+              <p>For soils that are low in silicon, apply calcium silicate slag before planting.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+  </body>
+
+</html>
